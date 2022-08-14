@@ -1,1 +1,33 @@
-=== Image Storage
+=== Build 
+
+You will need to compile this example first:
+
+[source,sh]
+----
+$ mvn package -DskipTests
+----
+
+=== Run
+
+To run this you need postgres
+
+[source,sh]
+----
+$ java -jar target/image_storage.jar
+----
+
+To stop the example hit `ctrl+c`
+
+=== Docker build
+
+[source,sh]
+----
+$ docker build -t image_storage .
+----
+
+=== Docker run
+
+[source,sh]
+----
+$ docker run -p 8080:8080 image_storage
+----
